@@ -1,0 +1,38 @@
+{
+  "name": "message-broker",
+  "version": "1.0.0",
+  "description": "Message Broker module",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/*.js --require @babel/register --reporter spec || exit 0",
+    "start": "nodemon --exec babel-node src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tremainebuchanan/message-broker.git"
+  },
+  "keywords": [
+    "message-broker"
+  ],
+  "author": "Tremaine Buchanan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tremainebuchanan/message-broker/issues"
+  },
+  "homepage": "https://github.com/tremainebuchanan/message-broker#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/register": "^7.14.5",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.2",
+    "nodemon": "^2.0.9"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}
